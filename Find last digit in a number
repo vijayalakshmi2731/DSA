@@ -1,0 +1,16 @@
+//Find a^b and return its last digit
+
+import java.util.*;
+import java.math.*;
+
+class Solution {
+    public int getLastDigit(String a, String b) {
+        int c = Integer.parseInt(a);
+        int d = Integer.parseInt(b);
+        
+        double val= Math.pow(c,d);
+        int n= (int) val;
+        
+        return (n % 10);
+    }
+};
