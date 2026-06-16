@@ -7,5 +7,14 @@ class GFG {
 
         int sum=  n*(n+1)/2;
         System.out.println(sum);
+
+or
+
+        int sum=0;
+        while(n>0){
+            sum=n+sum;
+            n--;
+        }
+        return sum;
     }
 }
