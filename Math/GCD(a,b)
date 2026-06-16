@@ -1,20 +1,33 @@
 class Solution {
     public static int gcd(int a, int b) {
-        int n=0;
-        if (a<b){
-            n=a;
+//EUCLIDEAN ALGORITHM
+        if(a ==0) return b;
+        if(b== 0) return a;
+        while(a!=b)
+        {
+            if(a>b) 
+            a = a-b;
+            if(b>a) 
+            b = b-a; 
         }
-        else{
-            n=b;
-        }
+        return a;
+
+//BRUTE FORCE
+        // int n=0;
+        // if (a<b){
+        //     n=a;
+        // }
+        // else{
+        //     n=b;
+        // }
         
-        int gcdVal=1;
+        // int gcdVal=1;
         
-        for(int i=2; i<=n; i++){
-            if(a%i==0 && b%i==0){
-                gcdVal=i;
-            }
-        }
-        return gcdVal;
+        // for(int i=2; i<=n; i++){
+        //     if(a%i==0 && b%i==0){
+        //         gcdVal=i;
+        //     }
+        // }
+        // return gcdVal;
     }
 }
