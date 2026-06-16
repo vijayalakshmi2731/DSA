@@ -1,0 +1,15 @@
+// https://www.geeksforgeeks.org/problems/triangular-number2850/1
+
+class Solution {
+    int isTriangular(int n) {
+        int sum=0;
+        int ans=0;
+        for(int i=1;i<=n;i++){
+            sum=sum+i;
+            if(sum==n){
+                ans=1;
+            }
+        }
+        return ans;
+    }
+}
